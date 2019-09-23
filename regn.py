@@ -1,28 +1,22 @@
 points = 0
 
+def kontrollera_svar(ratt_svar, anvandarens_svar):
+    if anvandarens_svar == ratt_svar:
+        points = points +1
+    else:
+        points = points -1
+
 svar_1 = input('kan grisar flyga?')
-if svar_1 == 'nej':
-    points = points + 1
-else:
-    points = points - 1
+kontrollera_svar('nej', svar_1)
 
 svar_2 = input('är Jacke sämst?')
-if svar_2 == 'ja':
-    points = points + 1
-else:
-    points = points - 1
+kontrollera_svar('ja', svar_2)
 
 svar_3 = input('kan jacke flyga?')
-if svar_3 == 'nej':
-    points = points + 1
-else:
-    points = points - 1
+kontrollera_svar('nej', svar_3)
 
 svar_4 = input('är jacke då en gris?')
-if svar_4 == 'ja':
-    points = points + 1
-else:
-    points = points - 1
+kontrollera_svar('ja', svar_4)
 
-    print("du fick" + str(points) + " poäng! bra jobbat")
+print("du fick" + str( points) + " poäng! bra jobbat")
 
